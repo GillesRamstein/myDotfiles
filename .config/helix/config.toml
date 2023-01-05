@@ -1,0 +1,41 @@
+theme = 'onedark'
+
+[editor]
+true-color = true
+line-number = 'relative'
+scroll-lines = 1
+auto-pairs = false
+shell = ['zsh', '-c']
+bufferline = 'multiple'
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.cursor-shape]
+insert = 'bar'
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+display-messages = true
+
+[keys.normal]
+X = 'extend_line_above'
+D = 'delete_char_backward'
+Z = { Z = ':x', Q = ':q!' } # close buffer with / without saving
+esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.insert]
+k = { j = 'normal_mode'}  # exit insert mode with kj
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
+
