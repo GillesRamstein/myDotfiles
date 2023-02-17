@@ -6,7 +6,7 @@ line-number = 'relative'
 scroll-lines = 1
 auto-pairs = false
 shell = ['zsh', '-c']
-bufferline = 'multiple'
+bufferline = 'always'
 
 [editor.whitespace.render]
 space = "all"
