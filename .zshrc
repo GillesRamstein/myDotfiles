@@ -131,11 +131,19 @@ alias hxconf="helix $HOME/.config/helix/config.toml"
 alias hxlconf="helix $HOME/.config/helix/languages.toml"
 alias hx=helix
 alias tmux="tmux -u"
-alias tm="tmux new-session -A -s home"
+alias tm="tmux attach -t gilles || tmux new -s gilles"
 alias dc="docker-compose"
 alias lg="lazygit"
 alias git="LANG=en_US git" # change git cli language to english
 alias dots="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+# alias ssh="kitty +kitten ssh"
+
+pyfmt() {
+ flake8 $1
+ isort $1
+ black $1
+}
 
 PATH=$PATH:~/.local/bin
 
